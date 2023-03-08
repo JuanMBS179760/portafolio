@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <style>
+        fieldset{
+            background-color: darkseagreen;
+        }
+        input{
+            background-color: rgba(137, 43, 226, 0.281);
+        }
+        textarea{
+            background-color: rgba(137, 43, 226, 0.377);
+        }
+    </style>
+    <h1 align="center">Formularios</h1>
+    <form action="" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <label for="usuario">Nombre de usuario:</label><br>
+            <input type="text" placeholder="Usuario" maxlength="12" name="usuario" id="usuario"><br>
+
+            <legend for="ad">Nombre:</legend><br>
+            <input type="text" type="text" name="ad" id="ad" placeholder="Nombre"> <br>
+
+            <legend for="ap">Apellido paterno:</legend><br>
+            <input type="text" type="text" name="ap" id="ap" placeholder="Apellido paterno"> <br>
+
+            <legend for="am">Apellido materno:</legend><br>
+            <input type="text" type="text" placeholder="Apellido materno" name="am" id="am"> <br>
+
+            <label for="pass">Contraseña:</label><br>
+            <input type="password" name="pass" id="pass" placeholder="Password" required><br>
+
+            <label for="com">Comentarios</label><br>
+            <textarea name="comenta" placeholder="Dejanos tu comentario" id="comenta" cols="25" rows="10"></textarea><br><br>
+
+            <label for="correo">E-mail</label><br>
+            <input type="email" name="correo" id="correo" placeholder="Correo Electronico"><br>
+
+           <label for="date">Fecha de nacimiento</label> <br>
+           <input type="date" name="fechan" id="fechan"> <br><br>
+
+           <label for="color">Selecciona un color</label> <br>
+            <input type="color" name="colores" id="colores"><br>
+
+            <label for="month">Mes de registro</label><br>
+            <input type="month" name="mes" id="mes"><br>
+
+            <label for="week">Semana</label><br>
+            <input type="week" name="semana" id="semana" required><br>
+
+            <label for="fh">Fecha y hora</label><br>
+            <input type="datetime-local" name="fechahora" id="fecha"><br>
+
+            <label for="files">Adjuntar archivo:</label><br>
+            <input type="file" name="archivos" id="archivos "required><br>
+
+            <label for="page">URL:</label><br>
+            <input type="url" name="pagina" id="pagina" required><br>
+
+            <label for="Cant">Cantidad a comprar:</label><br>
+            <input type="number" name="Cantidad" id="Cantidad"><br>
+
+            <label for="calif">Califica el producto:</label><br>
+            <input type="range" name="califica" id="califica" min="0" max="10" value="6"><br>
+
+            <h3>Indica tus formas de pago preferidas</h3>
+            <input type="checkbox" name="tarjeta" id="tarjeta" value="tarjeta">
+            <label for="tarjeta">Tarjeta de credito</label><br>
+            <input type="checkbox" name="tarjetad" id="tarjetad" value="tarjetad" checked>
+            <label for="debito">Tarjeta de debito</label><br>
+            <input type="checkbox" name="transfer" id="transfer" value="transfer">
+            <label for="transfer">Transferencia</label>
+
+            <h3>Indica tu género</h3>
+            <input type="radio" name="genero" id="genero">
+            <label for="genero">Femenino</label><br>
+
+            <input type="radio" name="genero" id="genero">
+            <label for="genero">Masculino</label><br>
+
+            <h3>Categotia de producto a buscar</h3>
+            <select size="7" multiple>
+                <optgroup label="Alimentos">
+                    <option>Lacteos</option>
+                    <option>Refijerados</option>
+                    <option>carnes</option>
+                    <option >Carnes frias</option>
+                    <option selected>Frutas/Verduras</option>
+                </optgroup>
+                <optgroup label="Cuidado personal">
+                    <option>Higiene personal</option>
+                    <option>Belleza</option>
+                </optgroup>
+                <optgroup label="Hogar"> 
+                    <option>Producto de limpieza</option>
+                    <option>Jardineria</option>
+                </optgroup>
+            </select><br><br><br>
+
+            <input type="submit"/><br>
+
+        </fieldset> 
+    </form>
+</body>
+</html>
