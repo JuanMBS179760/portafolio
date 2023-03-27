@@ -1,0 +1,22 @@
+.boton{
+    letter-spacing: 4px;
+    font-size: 150px;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    background-color: transparent;
+    color: white;
+    width: 750px;
+    margin: 100px;
+    padding: 100px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.boton:hover{
+    background: #ff0000a4;
+    box-shadow: 0 0 50px #ff0000a4, 0 5px 100px #ff0000a4, 0 10px 1000px #ff0000a4;
+}
