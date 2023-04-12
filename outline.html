@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso del outline</title>
+    <link rel="icon" href="https://www.upslp.edu.mx/Reinscripcion/Promedio/_img/logo.png">
+</head>
+<style>
+    *{
+        color: white;
+        font-size: 20px;
+        
+    }
+    body{
+        background:  rgba(2,0,36,1);
+        ;background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    #tabla{
+        position: absolute;
+        top: 350px;
+        text-align: center;
+    }
+    #logo{
+        width: 450px;
+
+    }
+    th{
+        outline: 10px solid rgb(82, 240, 77);
+    }
+    #p1{
+        outline: 8px ridge rgba(50, 220, 50, 0.6);border-radius: .5rem;
+
+    }
+    #p2{
+        padding: 25px;
+        width: 250px;
+        border: 10px solid #a01313;
+        border-radius: 15px;
+    }
+    #oc{
+        outline: 2px solid;      /* Establecer el ancho y el   estilo del contorno */
+        outline-color: #0000FF;  /* Hacer el contorno azul */
+    }
+    #oc1{
+        outline: 10px rebeccapurple;
+        outline-style: dotted;
+    }
+    #oc2{
+        outline: plum dashed;
+        outline-offset: 10px;
+    }
+    #oc3{
+        outline: 10px dashed silver;
+        outline-width: 10px;
+    }
+</style>
+
+<body>
+    <div align="center"><img id="logo" src="https://www.upslp.edu.mx/Reinscripcion/Promedio/_img/logo.png"><br>
+    <p align="left">Juan Manuel Barrios Salazar - 179760</p><br>
+    <p align="left">Programacion Web 1</p></div>
+
+    <table id="tabla">
+        <tr>
+            <th><h1>Usos del outline</h1></th>
+            <th><h1>Border</h1></th>
+            <th><h1>Diferencias</h1></th>
+        </tr>
+        <tr>
+            <td><p id="p1">El texto dentro del parrafo se le aplica un margen gracias a la funcion outline</p></td>
+            <td><p id="p2">Con la funcion border existe un desplazamiento en las cajas hechas y son cuadrados solamente</p></td>
+            <td><p>La propiedad CSS outline es una forma reducida para establecer una o más de las propiedades individuales de contorno outline-style, outline-width y outline-color en una sola declaración. En la mayoría de los casos el uso de este atajo es preferible y más conveniente.</p></td>
+        </tr>
+        <tr>
+            <td><p id="oc">cambio de color (outline-color)</p></td>
+            <td></td>
+            <td><p>Los contornos no ocupan espacio, son dibujados por encima del elemento. Por lo tanto, su aparición u ocultamiento no causa un redibujado de las cajas. No suma en el tamaño de la caja y no hay movimiento o desplazamiento de los elementos como con border.</p></td>
+        </tr>
+        <tr>
+            <td><p id="oc1">outline-style</p></td>
+            <td></td>
+            <td><p>Los contornos pueden no ser rectangulares. Si el elemento se distribuye en varias líneas, el contorno no forma un rectágulo para encerrar a todo el elemento. A diferencia de los bordes</p></td>
+        </tr>
+        <tr>
+            <td><p id="oc2">outline-width</p></td>
+            <td></td>
+            <td><p></p></td>
+        </tr>
+        <tr>
+            <td><p id="oc3">outline-offset</p></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
