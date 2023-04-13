@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+}
+table{
+    background-color: rgba(0, 0, 0, 0.61);
+    position: absolute;
+    top: 750PX;
+    font-size: 20px;
+    color: white;
+}
+img{
+    width: 250px;
+}
+.navegacion{
+    height: 100px;
+    width: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.692);
+    background-size: cover;
+}
+
+
+
+nav{
+ display: flex;   
+ align-items: center;
+ justify-content: space-between;
+ padding-top: 40px;
+ padding-left: 10%;
+ padding-right: 10%;
+}
+
+.logo{
+ scale: 1.5;
+ font-style: bold;
+ color: white;  
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+nav ul li a:hover{
+    color: rgb(218, 29, 29);
+    transition: .3s linear;
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+p{
+    font-size: 25px;
+    color: white;
+}
+
