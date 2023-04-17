@@ -1,0 +1,77 @@
+*{
+    text-align: center;
+    font-size: 25px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tit{
+    position: absolute;
+    display: block;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    outline: 10px solid green;
+    border-radius: 15px;
+    right: 10px;
+}
+
+nav{
+    max-width: 350px;
+    background-color: rgba(0, 128, 0, 0.801);
+    border-radius: 15px;
+    left: 0px;
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+
+}
+
+#menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+}
+
+#menuv{  
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    display: none;
+    left: 0px;
+    width: 300px;
+    background-color: rgba(144, 238, 144, 0.541);
+
+}
+
+#menu li:hover #menuv{
+    display: block;
+    border-radius: 15px;
+}
+
+#menuv li:hover{
+    transform: scale(1.3);
+    background-color: greenyellow;
+    border-radius: 20px;
+}
+#menuv li a{
+    color: white;
+}
+
+#menuv li a:hover{
+    display: block;
+    color: rgb(0, 0, 0);
+}
+    
+
+
+
