@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="scriptcalculadora.js"></script>
+    <link rel="icon" href="https://www.upslp.edu.mx/Reinscripcion/Promedio/_img/logo.png">
+    <title>Calculadora</title>
+</head>
+<style>
+    body{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+
+    form{
+        background-color: rgba(90, 88, 88, 0.753);
+    }
+</style>
+<body>
+    <form action="" method="post">
+
+        <br><label for="num1">Digita el numero 1</label>
+        <br><input type="text" id="num1">
+
+        <br><label for="num2">Digita el numero 2</label>
+        <br><input type="text" name="" id="num2">
+
+        <br><br><input type="button" value="Sumar" onclick="suma()">
+        <input type="button" value="Restar" onclick="resta()">
+        <input type="button" value="Multiplicacion" onclick="mult()">
+        <input type="button" value="Division" onclick="div()">
+    </form>
+
+    <h2>El resultado es:</h2>
+    <p id="res"></p>
+
+
+</body>
+</html>
