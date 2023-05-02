@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales (Millions)'],
+          ['2011',  0.1],
+          ['2012',  1.5],
+          ['2013',  2.37],
+          ['2014',  1.2],
+          ['2015',  .7],
+          ['2016',  3.3],
+          ['2017',  2.5],
+          ['2018',  4.2],
+          ['2019',  3.2],
+          ['2020',  6.5],
+
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Año',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+  </body>
+</html>
