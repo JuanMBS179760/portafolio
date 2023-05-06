@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(1, 1, 85);
+}
+
+form{
+    background-color: rgba(215, 176, 252, 0.336);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#genera{
+    width: 750px;
+    height: 50px;
+    color: white;
+    background-color: rgb(19, 218, 85);
+    border-radius: 15px;
+}
