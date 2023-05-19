@@ -1,0 +1,20 @@
+body{
+    background-color: gray;
+}
+#formulario{
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.formato{
+    font-family: 'Dancing Script', cursive;
+}
+
+#boton {
+    width: 90%;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+}
